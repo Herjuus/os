@@ -1,0 +1,7 @@
+cargo:rerun-if-changed=/Users/herjus/Repositories/os/kernel/Cargo.toml
+cargo:rustc-link-search=native=/Users/herjus/Repositories/os/kernel/target/bootimage/bootloader/x86_64-bootloader/release/build/bootloader-dd82595b3cac3e5a/out
+cargo:rustc-link-lib=static=kernel_bin-kernel
+cargo:rerun-if-env-changed=KERNEL
+cargo:rerun-if-env-changed=KERNEL_MANIFEST
+cargo:rerun-if-changed=/Users/herjus/Repositories/os/kernel/target/x86_64-f_os/debug/kernel
+cargo:rerun-if-changed=build.rs
